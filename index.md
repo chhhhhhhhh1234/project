@@ -7,16 +7,16 @@ The project aims to conduct survival analysis on public health data about whethe
 
 ## Data
 
-+ Survey Data from NHANSES
++ Survey Data from 1999-2000 National Health and Nutrition Examination Survey (NHANES)
   ```stata
   import sasxport5 "https://wwwn.cdc.gov/Nchs/Nhanes/1999-2000/DEMO.XPT", clear
   ```
 
-+ Mortality Follow-up Data from NCHS
++ Mortality Follow-up Data from National Center for Health Statistics (NCHS)
   Click [link] (https://ftp.cdc.gov/pub/) as follows:
   - Health Statistics
     - NCHS
-      - datalinkage
+      - Datalinkage
         - Linked Mortality
           - ```NHANES_1999_2000_MORT_2019_PUBLIC.dat```    
                         
