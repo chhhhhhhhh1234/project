@@ -13,7 +13,7 @@ The project aims to conduct survival analysis on public health data about whethe
   ```
 
 + Mortality Follow-up Data from National Center for Health Statistics (NCHS)
-  Click [link] (https://ftp.cdc.gov/pub/) as follows:
+  Click [link](https://ftp.cdc.gov/pub/) as follows:
   - Health Statistics
     - NCHS
       - Datalinkage
