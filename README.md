@@ -64,4 +64,7 @@ The project aims to conduct survival analysis on public health data about whethe
   desc huq010
   codebook huq010
   ```
+
+### Week 7 - Analysis
+
 + click [here]() to view nonparametric and semiparametric risk estimates from Stata
