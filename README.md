@@ -67,4 +67,4 @@ The project aims to conduct survival analysis on public health data about whethe
 
 ### Week 7 - Analysis
 
-+ click [here]() to view nonparametric and semiparametric risk estimates from Stata
++ click [here](dyndoc.html) to view nonparametric and semiparametric risk estimates from Stata
