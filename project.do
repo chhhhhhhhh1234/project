@@ -1,4 +1,4 @@
-global repo "https://raw.githubusercontent.com/chhhhhhhhh1234/project/main/"
+global repo "https://github.com/chhhhhhhhh1234/project/raw/main/"
 do ${repo}followup.do
 save followup, replace 
 import sasxport5 "https://wwwn.cdc.gov/Nchs/Nhanes/1999-2000/DEMO.XPT", clear
