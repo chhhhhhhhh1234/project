@@ -33,8 +33,9 @@ To download and save the public-use LMFs to your hard drive, follow these steps:
 		 and the data file is saved as "<SURVEY>_MORT_2019_PUBLIC.DAT". 
 */
 
-di "What is your working directory?" _request(workdir)   
+di "What is your working directory?" _request(workdir)
 cd "$workdir"
+//cd "C:\PUBLIC USE DATA"    // SET DIRECTORY WHERE DATA ARE LOCATED, E.G. "C:\PUBLIC USE DATA"
 global SURVEY NHANES_1999_2000     // REPLACE <SURVEY> WITH RELEVANT SURVEY NAME (IN ALL CAPS)
 * example syntax: 
 * global SURVEY NHIS_2018
@@ -142,7 +143,7 @@ label define ucodfmt 10 "All other causes (residual)"                           
 label define ucodfmt .z "Ineligible, under age 18, assumed alive, or no cause of death data"      , add
 
 // READ IN THE FIXED-WIDTH FORMAT ASCII PUBLIC-USE LMF
-infix seqn 1-6 eligstat 15 mortstat 16 ucod_leading 17-19 diabetes 20 hyperten 21 permth_int 43-45 permth_exm 46-48 using ${SURVEY}_MORT_2019_PUBLIC.dat	
+infix seqn 1-6 eligstat 15 mortstat 16 ucod_leading 17-19 diabetes 20 hyperten 21 permth_int 43-45 permth_exm 46-48 using "https://ftp.cdc.gov/pub/HEALTH_STATISTICS/NCHS/datalinkage/linked_mortality/NHANES_1999_2000_MORT_2019_PUBLIC.dat"	
 
 
 // REPLACE MISSING VALUES TO .z FOR LABELING
@@ -187,4 +188,3 @@ tab permth_exm if permth_exm==.z, missing
 // SAVE DATA FILE IN DIRECTORY DESIGNATED AT TOP OF PROGRAM AS **SURVEY**_PUF.DTA
 // replace option allows Stata to overwrite an existing .dta file
 save ${SURVEY}_PUF, replace
-
